@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/chomsky');
+
+html,body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; /* Hide horizontal overflow */
+    height: 100%;
+    background-color: #000000;
+}
+
+.NavigationBar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 8; /* Vertically center the content */
+}       
+ul {
+    list-style: none; /* Remove bullet points */
+}
+
+li {
+    margin-right: 100px;
+    margin-left: 100px;
+    display: inline;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+a{
+    text-decoration: none;
+    color: white; 
+}
+.StatueImage{
+    width: 700px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: 2;
+
+}
+.BackNumberEffect{
+    width: 2000px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 70%;
+    z-index: 1;
+
+}
+.StatsSection {
+    background-color: white;
+    width: 100%;
+    top: 950px; /* Adjust based on the height of the image */
+    height: 3522px;
+    z-index: 10;
+    position: absolute; /* Add position: absolute; */
+}
+.WebsiteHeaderTextsMainText{
+    opacity: 100%;
+    top: 50px;
+    font-size: 170px;
+    left: 20px;
+    position: fixed;
+    text-align: left;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+
+}
+.WebsiteHeaderTextsMainTextFontWeightThin{
+    font-weight: 200;
+}
+.WebsiteHeaderTextsMainTextFontWeightBold{
+    font-weight: 500;
+}
+.WebsiteHeaderTextsSecondText{
+    width: 1300px;
+    top: 550px;
+    font-size: 30px;
+    left: 20px;
+    font-weight: 100;
+    position: absolute;
+    text-align: left;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+.GetStartedButton {
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    top: 730px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: 500;
+    font-family: 'Outfit', sans-serif;
+    font-size: 25px; /* Adjust as needed */
+    border-radius: 50px;
+    border-color: rgb(255, 255, 255);
+    border-width: 2px; /* Added border width for consistency */
+    border-style: solid; 
+    z-index: 5;/* Added border style for consistency */
+    transition: background-color 0.3s, color 0.3s; /* Added transition for smoother effect */
+}
+
+.GetStartedButton:hover {
+    background-color: white;
+    color: black; /* Adjusted text color for visibility */
+    border-color: black; /* Adjusted border color for visibility */
+}
+.StatsSection table{
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+    font-family: 'Outfit', sans-serif;
+    font-size: 40px;
+}
+
+.StatsSection p {
+    margin: 0;
+}
+.StatsHeadings{
+    margin: 0;
+}
+.Stats {
+    font-weight: 600;
+    font-size: 70px;
+    opacity: 0%;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Add transition for smoother effect */
+}
+.sticky_parent{
+    height: 175vh; /* This needs to be changed [empty space length after the images are gone] */
+}
+.sticky{
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+.scroll_section{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 250vw; /* This needs to be changed */
+    will-change: transform;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+
+}
+img{
+    border-radius: 10PX;
+    width: 400px;
+    object-fit: cover;
+    height: 80%;
+    object-position: center;
+}
+.Preview{
+    margin-top: 40px;
+}
+.CollectionText{
+    font-family: 'Outfit', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+
+}
+.StatsColumn{
+    justify-content: space-between;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+.CustomerAdvantageStats {
+    height: 500px;
+    color: white;
+    background-image: url('Images/CustomerAdvantageStats.png'); 
+    background-color: rgb(0, 0, 0);
+    position: relative; /* Set position to relative */
+    padding: 50px; /* Add padding */
+}
+
+.GlassBoxContainer {
+    width: calc(100% - 100px); /* Set width to 100% minus double the padding */
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Set position to absolute */
+    top: 50%; /* Adjust to vertically center */
+    left: 50%; /* Adjust to horizontally center */
+    transform: translate(-50%, -50%); /* Center the container */
+}
+
+.GlassBox {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 32px;
+    width: 100%; /* Ensure the box fills the container */
+    max-width: 100%; /* Add max-width for responsiveness */
+}
+.InformationSection {
+    display: flex;
+    width: 100%;
+    top: 5525px;
+    height: 990px; /* Adjust height as needed */
+}
+
+.FirstInformationSection,
+.SecondInformationSection {
+    flex: 1; /* Each section takes up equal space */
+}
+
+.FirstInformationSection {
+    padding-left: 20px;
+    padding-top: 100px;
+}
+
+.SecondInformationSection {
+    padding: 20px; /* Adjust padding as needed */
+}
+.InformationHeadingSection{
+    font-family: 'Outfit', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: start;
+    margin: 0;
+
+}
+.InformationText{
+    padding-top: 30px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: justify;
+    margin: 0;
+}
+.NavigatorEnd {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    padding: 0px /* Adjust padding as needed */
+}
+.footer-table {
+    table-layout: fixed; /* Ensure equal width for columns */
+}
+
+.footer-table td {
+    text-align: center;
+    vertical-align: top; /* Adjust vertical alignment as needed */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.footer-columns {
+    font-weight: 200;
+    font-size: 15px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0; /* Reset margin */
+}
+
+.footer-columns li {
+    font-size: 20px;
+    display: block; /* Display items as block elements */
+    margin-bottom: 10px; /* Add margin between items */
+}
+.LinkHeading{
+    font-size: 30px;
+    font-weight: 800;
+}
+.MadeWithText {
+    font-weight: 400;
+    padding-bottom: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px; /* Adjust font size */
+    color: white; /* Set text color */
+    text-align: center; /* Center align text */
+    margin: 20px 0; /* Add margin for spacing */
+}
+.Heart{
+    width: 20px;
+}
+.HeartContainerforwidth{
+    width: 100%;
+}
+.CollectionLargerHeading{
+    font-family: 'Outfit', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+
+}
+.StatsLargerText{
+    font-weight: 600;
+    font-size: 150px;
+    opacity: 0%;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Add transition for smoother effect */
+
+}
+
+/* Apply floating effect to .Coin */
+.Coin {
+    animation: float 6s ease-out infinite; /* Adjust duration and timing function as needed */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-60px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

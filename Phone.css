@@ -1,0 +1,162 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/chomsky');
+
+/* General Styles */
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: black;
+}
+
+/* Navigation Bar */
+.NavigationBar {
+    height: 80px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.WebsiteHeaderTextsMainTextFontWeightThin{
+    font-weight: 200;
+}
+.WebsiteHeaderTextsMainTextFontWeightBold{
+    font-weight: 500;
+}
+
+/* Header Texts */
+.WebsiteHeaderTextsMainText {
+    font-size: 50px;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+.WebsiteHeaderTextsSecondText {
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.GetStartedButton {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid white;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* Stats Section */
+.StatsSection {
+    background-color: white;
+    padding: 20px;
+}
+
+.StatsHeadings {
+    font-size: 20px;
+}
+
+.Stats {
+    font-size: 30px;
+}
+
+/* Information Sections */
+.InformationSection {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.InformationHeadingSection {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.InformationText {
+    font-size: 14px;
+    color: white;
+    text-align: justify;
+}
+
+/* Footer */
+.NavigatorEnd {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.LinkHeading {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.MadeWithText {
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.StatueImage{
+    z-index: 2;
+
+}
+
+.BackNumberEffect {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Position it behind all other elements */
+    opacity: 0.5; /* Adjust opacity as desired */
+}
