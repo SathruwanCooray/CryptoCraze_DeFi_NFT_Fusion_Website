@@ -160,3 +160,6 @@ img {
     z-index: -1; /* Position it behind all other elements */
     opacity: 0.5; /* Adjust opacity as desired */
 }
+.Preview{
+    margin-top: 40px;
+}
