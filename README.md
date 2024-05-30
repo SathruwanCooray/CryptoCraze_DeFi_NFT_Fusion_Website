@@ -6,6 +6,8 @@ This is a Crypto Website designed for enthusiasts and collectors. The website sh
 
 The Crypto Website serves as a hub for crypto collectors and enthusiasts. It features sections such as:
 
+https://github.com/SathruwanCooray/CryptoCraze_Website/assets/150252729/1fb30082-b910-496a-95db-1d599e5e3153
+
 - **Homepage:** Introducing visitors to the world of crypto collections with a welcoming message.
 - **Site Stats:** Displaying statistics related to Artworks, Auctions or artists.
 - **Featured Collections:** Highlighting curated collections of rare or popular crypto assets.
