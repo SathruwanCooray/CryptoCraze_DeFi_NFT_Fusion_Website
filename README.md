@@ -76,4 +76,4 @@ This website is created for educational and personal use. Permission is hereby g
 
 ## Acknowledgments
 
-Special thanks to [Crypto Community] and [Any Other Acknowledgments].
+Special thanks to [Crypto Community].
